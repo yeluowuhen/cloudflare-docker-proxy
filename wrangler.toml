@@ -12,18 +12,19 @@ CUSTOM_DOMAIN = "mqing.cloud"
 [env.dev.vars]
 MODE = "debug"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
+CUSTOM_DOMAIN = "exmaple.com"
 
 [env.production]
 name = "cloudflare-docker-proxy"
-routes = [
-  { pattern = "docker.mqing.cloud", custom_domain = true },
-  { pattern = "quay.mqing.cloud", custom_domain = true },
-  { pattern = "gcr.mqing.cloud", custom_domain = true },
-  { pattern = "k8s-gcr.mqing.cloud", custom_domain = true },
-  { pattern = "k8s.mqing.cloud", custom_domain = true },
-  { pattern = "ghcr.mqing.cloud", custom_domain = true },
-  { pattern = "cloudsmith.mqing.cloud", custom_domain = true },
-]
+#routes = [
+#  { pattern = "docker.mqing.cloud", custom_domain = true },
+#  { pattern = "quay.mqing.cloud", custom_domain = true },
+#  { pattern = "gcr.mqing.cloud", custom_domain = true },
+#  { pattern = "k8s-gcr.mqing.cloud", custom_domain = true },
+#  { pattern = "k8s.mqing.cloud", custom_domain = true },
+#  { pattern = "ghcr.mqing.cloud", custom_domain = true },
+#  { pattern = "cloudsmith.mqing.cloud", custom_domain = true },
+#]
 
 [env.production.vars]
 MODE = "production"
